@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvey Cakes & More</title>
+    <style>
+        /* --- Reset & Base --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; color: #333; line-height: 1.6; background-color: #fff8f0; }
+        a { text-decoration: none; color: inherit; }
+        img { max-width: 100%; display: block; border-radius: 8px; }
+
+        /* --- Header / Hero --- */
+        header {
+            background: url('images/hero.jpg') center/cover no-repeat;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+        }
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        .btn-whatsapp:hover { background-color: #1ebe5d; }
+
+        /* --- Sections --- */
+        section { padding: 60px 20px; max-width: 1200px; margin: auto; }
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #a65c3c;
+        }
+
+        /* --- Menu --- */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .menu-item {
+            background-color: #fff3eb;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .menu-item:hover { transform: translateY(-5px); }
+        .menu-item h3 { margin-bottom: 10px; color: #d97b5f; }
+        .menu-item ul { list-style-type: none; }
+
+        /* --- Gallery --- */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        /* --- Order --- */
+        .order-step { margin-bottom: 15px; }
+        .order-section { text-align: center; }
+
+        /* --- Contact --- */
+        .contact-list { list-style: none; text-align: center; }
+        .contact-list li { margin: 10px 0; font-size: 1.1rem; }
+
+        /* --- Footer --- */
+        footer { background-color: #a65c3c; color: #fff; text-align: center; padding: 20px; }
+
+        /* --- Responsive --- */
+        @media (max-width:768px) {
+            header h1 { font-size: 2.2rem; }
+            header p { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header>
+        <h1>Marvey Cakes & More</h1>
+        <p>Homemade Love, Beautifully Baked</p>
+        <a href="https://wa.me/2349159861442" class="btn-whatsapp" target="_blank">Order on WhatsApp</a>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>Welcome to Marvey Cakes & More</h2>
+        <p>We combine cozy, homely flavors with modern, elegant designs. Every cake and treat is crafted with care to make your special moments unforgettable.</p>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>What We Bake</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <h3>🎂 Cakes</h3>
+                <ul>
+                    <li>Wedding Cakes</li>
+                    <li>Birthday Cakes</li>
+                    <li>Anniversary Cakes</li>
+                    <li>Custom Celebration Cakes</li>
+                </ul>
+            </div>
+            <div class="menu-item">
+                <h3>🧁 Treats & Desserts</h3>
+                <ul>
+                    <li>Cupcakes</li>
+                    <li>Cookies</li>
+                    <li>Doughnuts</li>
+                    <li>Pastries</li>
+                </ul>
+            </div>
+            <div class="menu-item">
+                <h3>🌯 Savoury Delights</h3>
+                <ul>
+                    <li>Shawarma</li>
+                    <li>Small Chops</li>
+                    <li>Chin Chin</li>
+                </ul>
+            </div>
+        </div>
+        <p style="text-align:center; margin-top:20px;">✨ And a variety of other delicious treats made to order.</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Our Creations</h2>
+        <div class="gallery">
+            <img src="images/cake1.jpg" alt="Wedding Cake">
+            <img src="images/cake2.jpg" alt="Birthday Cake">
+            <img src="images/cupcakes.jpg" alt="Cupcakes">
+            <img src="images/smallchops.jpg" alt="Small Chops">
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="order-section">
+        <h2>How to Place an Order</h2>
+        <div class="order-step">1. Choose your cake or treats</div>
+        <div class="order-step">2. Send us your details & inspiration</div>
+        <div class="order-step">3. We bake it fresh just for you</div>
+        <p style="margin-top:20px;">📲 Order directly on WhatsApp</p>
+        <a href="https://wa.me/2349159861442" class="btn-whatsapp" target="_blank">Order on WhatsApp</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <ul class="contact-list">
+            <li>📞 WhatsApp: <a href="https://wa.me/2349159861442" target="_blank">+234 915 986 1442</a></li>
+            <li>📧 Email: <a href="mailto:marveycakesndmore@gmail.com">marveycakesndmore@gmail.com</a></li>
+            <li>📱 Instagram: <a href="https://instagram.com/marveycakes" target="_blank">@marveycakes</a></li>
+            <li>🎵 TikTok: <a href="https://tiktok.com/@marveycakes_ndmore" target="_blank">@marveycakes_ndmore</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 Marvey Cakes & More | Baked with love, served with joy.
+    </footer>
+
+</body>
+</html>
